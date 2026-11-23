@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>留声（Liusheng v3.0.0）— 本机离线、原声可追溯的中国家庭声音记忆档案</title>
+  <meta
+    name="description"
+    content="留声是一款面向家庭子女与口述史工作室的本地离线桌面记忆档案工坊：每句文稿直连长辈原声，一次买断无年费，支持 B5 印厂出血画册与单文件有声书导出。"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="#top" aria-label="留声首页">
+        <span class="seal-mark" aria-hidden="true">留</span>
+        <span class="brand-text-group">
+          <span class="brand-name">留声 · Liusheng</span>
+          <span class="brand-sub">私人家族声音记忆档案工坊</span>
+        </span>
+      </a>
+
+      <nav class="header-nav" aria-label="页面导航">
+        <a href="#showcase">双生命态书房</a>
+        <a href="#craft">核心能力</a>
+        <a href="#pricing">价格与版本</a>
+        <a href="#download">下载与安装</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+
+      <a class="btn btn-primary btn-sm header-cta" href="#download">下载体验版</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Spread -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div>
+          <h1 class="hero-title">让长辈的乡音与老照片，留在自家电脑里的传家书</h1>
+          <p class="hero-lead">
+            无需注册云端账号，也不用担心按年续费或服务停服。留声把离线语音转写、字级原声溯源、B5 印厂级排版和生命态伦理守护装进一台 Mac 本机——子女陪爸妈翻旧照片聊半小时，就能做出一家人永远带得走的传家书与纪念短片。
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#download">免费下载体验版 v3.0.0</a>
+            <a class="btn btn-secondary" href="#family-edition">了解传家买断版 · ¥198</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="hero-meta-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              <span>核心档案 100% 存放在您自己的电脑硬盘，随时可免费导出全量 <code>.liusheng</code> 备份包</span>
+            </div>
+            <div class="hero-meta-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="12" rx="2" />
+                <path d="M8 20h8M12 16v4" />
+              </svg>
+              <span>当前支持 Apple Silicon Mac（M1–M4，macOS 12+）；Windows 版将在首批家庭与工作室试点验证后排期</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="showcase" class="showcase-frame" aria-label="留声软件真实运行界面样板预览">
+          <div class="showcase-tabs" role="tablist" aria-label="切换在世与星上分册预览">
+            <button
+              id="tab-living"
+              class="showcase-tab"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="showcase-panel"
+            >
+              人间岁月卷（在世）
+            </button>
+            <button
+              id="tab-star"
+              class="showcase-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="showcase-panel"
+            >
+              星上回响卷（已逝）
+            </button>
+          </div>
+
+          <div id="showcase-panel" class="showcase-image-wrap">
+            <img
+              id="showcase-image"
+              class="showcase-image"
+              src="./assets/preview-living-book.png"
+              alt="留声桌面端在世长辈「人间岁月卷」示例书房界面：周伯庸（样板演示）档案扉页与 70 道年代话头共读台"
+            />
+          </div>
+
+          <p id="showcase-caption" class="showcase-caption">
+            <strong>样板演示 · 在世长辈「人间岁月卷」</strong>（合成音画素材 · 遵循 GB 45438-2025）：展示 1936 年生人年代校准话头、照片时间轴与原声精校入口；在世分册全栈禁止任何 AI 替身对话。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Local-First & Zero-Hallucination -->
+    <section id="privacy" class="section">
+      <div class="container">
+        <h2 class="section-heading">为什么很多子女开始拒绝把家史放在云端订阅 App 里？</h2>
+        <p class="section-intro">
+          过去两年多家云端数字遗产服务停服或停止维护、普通 AI 回忆录动辄改掉老人乡音并错认小村与老厂名，让家庭陷入既担心隐私泄漏、又怕断续费后带不走资料的两难。留声选择一条更克制但也更踏实的路。
+        </p>
+
+        <div class="ledger-grid">
+          <div class="ledger-panel">
+            <h3 class="ledger-title">常见纯云端工具的现实隐患</h3>
+            <ul class="ledger-list">
+              <li>
+                <svg class="ledger-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" /><path d="M15 9l-6 6M9 9l6 6" />
+                </svg>
+                <span><strong>厂商停服或停续费，记忆随时失联</strong>：绑定按年账号或单独高价解锁 PDF，停止付费后往往难以完整编辑或带走原档。</span>
+              </li>
+              <li>
+                <svg class="ledger-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" /><path d="M15 9l-6 6M9 9l6 6" />
+                </svg>
+                <span><strong>大模型过度润色，丢失家人真话</strong>：把地方口音与质朴回忆改写成千篇一律的公文腔，甚至凭空编造未说过的年代细节。</span>
+              </li>
+              <li>
+                <svg class="ledger-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" /><path d="M15 9l-6 6M9 9l6 6" />
+                </svg>
+                <span><strong>“AI 复活真人在线”越界消费情绪</strong>：未经近亲属清晰授权将逝者包装成实时对话，违背法律底线与家人心理安全感。</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ledger-panel ledger-panel-highlight">
+            <h3 class="ledger-title">留声 3.0 的工程级档案承诺</h3>
+            <ul class="ledger-list">
+              <li>
+                <svg class="ledger-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A43" stroke-width="2.2" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span><strong>一次买断、零静默上传</strong>：无需账号，SenseVoice 离线转写与 Typst 排版全内置于本机，<code>.liusheng</code> 归档在任何状态下均可免费原样导出。</span>
+              </li>
+              <li>
+                <svg class="ledger-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A43" stroke-width="2.2" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span><strong>字级原声溯源，<code>raw/edited</code> 双保留</strong>：每段成稿均精确锚定原声毫秒切片与 <code>0.5x</code> 慢放精校，拒绝编造地名与乡音。</span>
+              </li>
+              <li>
+                <svg class="ledger-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A43" stroke-width="2.2" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span><strong>在世 / 已逝严格双态隔离</strong>：已逝亲人空间必须完成《民法典》第 994 条第一顺位近亲属存证且支持随时一键撤回冻结，绝不冒充逝者在线对话。</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Archival Capabilities -->
+    <section id="craft" class="section">
+      <div class="container">
+        <h2 class="section-heading">从陪爸妈聊天到拿到可印制的传家书，每一步都落地在本机</h2>
+        <p class="section-intro">
+          内置《外婆/外公的岁月留声》完整双态样板书房（可随时一键无痕清空），子女可以先看成书和听原声演示，再决定替自己父母建档。
+        </p>
+
+        <div class="craft-rows">
+          <div class="craft-row">
+            <div>
+              <h3 class="craft-row-label">看着老照片顺口共读，不必父母动笔打字</h3>
+              <span class="craft-row-tag">70 道年代校准话头</span>
+            </div>
+            <p class="craft-row-desc">
+              依据长辈出生年份自动适配青年、知青/进厂、成家等时代问题；支持 Mac 麦克风实时录制或直接拖入微信手机旧录音。内置 Sherpa-ONNX 离线转写与 0.5x–1.25x 慢放逐句校对，长访谈按重点书签一键拆分成章，保留方言词味不失真。
+            </p>
+          </div>
+
+          <div class="craft-row">
+            <div>
+              <h3 class="craft-row-label">印厂级 B5 传家书、有声书与纪念短片一套交付</h3>
+              <span class="craft-row-tag">Typst + LGPL FFmpeg 本地引擎</span>
+            </div>
+            <p class="craft-row-desc">
+              可一键输出直接交给图文快印店印制的 B5 宣纸版心（含 3mm 出血线与裁切线）、长辈微信双击打开就能听原声的单文件离线 <code>.html</code>、微信竖屏有声视频卡，以及本机双音轨混音渲染的《茶花开了》四幕纪念短片（微信分享版片头带符合 GB 45438-2025 ≥5% 高度的显式 AI 标识）。
+            </p>
+          </div>
+
+          <div class="craft-row">
+            <div>
+              <h3 class="craft-row-label">为独立口述史与家庭影像工作室准备的多客户工作台</h3>
+              <span class="craft-row-tag">Multi-Vault 物理隔离</span>
+            </div>
+            <p class="craft-row-desc">
+              工作室版为每个受托家庭建立物理隔离的独立文件夹与 SQLite 库，严防跨客户串档；支持定制版权页出品机构署名、导出《受访长辈知情同意与原声溯源存证书》PDF 及配套《个保法》委托处理协议模板，把原本一两天的转写校对与排版压缩到一个晚上。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2 class="section-heading">透明版本与价格：先免费完整试用，认可再买断</h2>
+        <p class="section-intro">
+          所有激活码均基于 Ed25519 非对称签名在软件本机 0.1 秒离线核验，不绑定单一硬件机器码（家用支持最多 3 台自有 Mac 交替整理）。
+        </p>
+
+        <div class="pricing-grid">
+          <!-- Trial Tier -->
+          <div class="tier-box">
+            <div>
+              <div class="tier-head">
+                <h3 class="tier-name">免费体验版</h3>
+                <div class="tier-price-block">
+                  <span class="tier-price tabular-nums">¥0</span>
+                  <span class="tier-price-note">免注册直接体验</span>
+                </div>
+              </div>
+              <p class="tier-summary">先体验完整《外婆/外公》双态样板书房，再为第一位长辈建档试录。</p>
+              <ul class="tier-features">
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2D5A43" stroke-width="2.2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span>可建 1 位真实长辈档案、保存 3 篇真实故事卡</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2D5A43" stroke-width="2.2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span>可导出 A4 家用校阅稿与 1 支微信有声视频卡</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2D5A43" stroke-width="2.2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span>原图、原声录音与 <code>.liusheng</code> 全量备份始终免费导出</span>
+                </li>
+              </ul>
+            </div>
+            <div class="tier-foot">
+              <a class="btn btn-secondary" href="#download">前往下载体验</a>
+            </div>
+          </div>
+
+          <!-- Family Edition -->
+          <div id="family-edition" class="tier-box tier-family">
+            <div>
+              <div class="tier-head">
+                <h3 class="tier-name">传家典藏买断版</h3>
+                <div class="tier-price-block">
+                  <span class="tier-price tabular-nums">¥198</span>
+                  <span class="tier-price-note"><span class="tier-anchor">¥298</span>早鸟买断 · 无年费</span>
+                </div>
+              </div>
+              <p class="tier-summary">适合重阳、寿辰送给父母长辈的心意，永久解锁全家谱系与印厂级出版。</p>
+              <ul class="tier-features">
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" stroke-width="2.2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span><strong>不限人数</strong>祖辈档案与夫妻家族关系谱系</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" stroke-width="2.2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span><strong>不限篇数</strong>长卷故事、书签拆章与不限次微信视频卡</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" stroke-width="2.2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span><strong>B5 传家书 + 3mm 印厂出血 PDF</strong>与免解压有声 <code>.html</code></span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" stroke-width="2.2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span><code>LS2-FAM</code> 离线激活码 · 同一家庭最多 3 台 Mac 可用</span>
+                </li>
+              </ul>
+            </div>
+            <div class="tier-foot">
+              <a id="family-buy-cta" class="btn btn-primary" href="#family-order-drawer">订购早鸟传家版 · ¥198</a>
+              <div id="family-order-drawer" class="inline-drawer" hidden>
+                <p><strong>当前早鸟人工发码通道（前 50 户专享 ¥198）：</strong></p>
+                <p>线上自动收款台正在对接中；如需立即获取 <code>LS2-FAM</code> 正版买断授权（含 14 天不满意无忧退款保障），请先下载体验版试用《外婆》样板书房，并致信 <a href="mailto:support@liusheng.app?subject=订购留声传家典藏版(LS2-FAM)">support@liusheng.app</a> 备注「早鸟传家版」，我们将在 1 个工作日内为您签发离线激活码。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio Edition -->
+          <div id="studio-edition" class="tier-box tier-studio">
+            <div>
+              <div class="tier-head">
+                <h3 class="tier-name">工作室尊享版</h3>
+                <div class="tier-price-block">
+                  <span class="tier-price tabular-nums">¥1,280</span>
+                  <span class="tier-price-note">/ 年 · 商用授权</span>
+                </div>
+              </div>
+              <p class="tier-summary">面向家史代写师、家庭纪实摄影、金婚影楼与高端康养机构。</p>
+              <ul class="tier-features">
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2D5A43" stroke-width="2.2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span>包含传家典藏版全部离线转写、短片与出版能力</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2D5A43" stroke-width="2.2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span><strong>多客户家庭物理隔离库（Multi-Vault）</strong>防串档</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2D5A43" stroke-width="2.2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span>定制画册版权页<strong>出品机构署名</strong> + 商用《知情存证书》与 DPA 模板</span>
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2D5A43" stroke-width="2.2" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span><code>LS2-STU</code> 年卡 · 到期转只读仍可免费导出全量客户资产</span>
+                </li>
+              </ul>
+            </div>
+            <div class="tier-foot">
+              <a id="studio-buy-cta" class="btn btn-pine" href="#studio-order-drawer">申请工作室试测 / 商用年卡</a>
+              <div id="studio-order-drawer" class="inline-drawer" hidden>
+                <p><strong>首批 3–5 家口述史 / 影像工作室试点优惠通道：</strong></p>
+                <p>正在招募首批深度试用工作室（可申请 30 天全功能 <code>LS2-STU</code> 评估码配合实际交付测试）。请发邮件至 <a href="mailto:support@liusheng.app?subject=申请留声工作室试测(LS2-STU)">support@liusheng.app</a> 简述工作室所在城市与常规成书交付量。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="disclosure-strip">
+          <strong>关于云端算力券与功能边界的诚实说明：</strong>
+          传家买断版与工作室版已完整包含本机离线语音转写、B5 出版排版、本地《茶花开了》混音成片及 <code>.liusheng-flow.zip</code> / <code>.liusheng-star.zip</code> 离线协作包。<strong>按次计费的云端实时渲染算力券（<code>LS3-*</code>）现阶段暂不公开对外兜售</strong>（软件内仅保留兑换口用于内测定制制作包），确保每位购买用户买到的功能都 100% 在本机可用。
+        </div>
+      </div>
+    </section>
+
+    <!-- Download & Verify -->
+    <section id="download" class="section">
+      <div class="container">
+        <h2 class="section-heading">下载与安装检验：先核对配置与校验和</h2>
+        <p class="section-intro">
+          桌面端已内置 SenseVoice int8 + Silero VAD、Typst 与 LGPL FFmpeg，下载单个磁盘镜像后即可全程断网工作。
+        </p>
+
+        <div class="download-panel">
+          <div>
+            <ul class="spec-list">
+              <li class="spec-row">
+                <span class="spec-label">当前发行版本</span>
+                <span><strong id="cfg-version" class="tabular-nums">v3.0.0</strong>（macOS Apple Silicon 正式版）</span>
+              </li>
+              <li class="spec-row">
+                <span class="spec-label">安装镜像文件</span>
+                <span><code id="cfg-dmg-name">Liusheng-3.0.0-macOS-arm64.dmg</code> · <span id="cfg-dmg-size" class="tabular-nums">约 210 MB</span></span>
+              </li>
+              <li class="spec-row">
+                <span class="spec-label">硬件与系统要求</span>
+                <span><strong>Apple Silicon（M1 / M2 / M3 / M4）</strong> · macOS 12.0+ · 暂不支持 Intel Mac 或 Windows</span>
+              </li>
+            </ul>
+
+            <div class="sha-box">
+              <span class="spec-label">SHA-256 校验和</span>
+              <code id="cfg-dmg-sha" class="sha-code">待配置发布镜像校验和</code>
+              <button id="copy-sha-btn" type="button" class="btn btn-secondary btn-sm">复制校验和</button>
+              <span id="copy-sha-status" role="status" aria-live="polite" class="brand-sub"></span>
+            </div>
+
+            <div class="download-cta-row">
+              <a id="dmg-download-cta" class="btn btn-primary" href="#dmg-pending-drawer">立即下载 v3.0.0 安装镜像 (.dmg)</a>
+              <div id="dmg-pending-drawer" class="inline-drawer" hidden>
+                <p><strong>首批体验安装包分发方式：</strong></p>
+                <p>公网 CDN 分发直链正接入中；如果您正参与留声家庭或工作室试用，请使用邀请包附带的原版镜像，并比对上方 <code>SHA-256</code> 完全一致后安装；或联系 <a href="mailto:support@liusheng.app?subject=获取留声3.0.0安装包">support@liusheng.app</a> 获取镜像直传链接。</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="gatekeeper-notice-box" class="gatekeeper-box">
+            <h3>macOS 首次打开必读（公证接入过渡期指引）</h3>
+            <ol>
+              <li>本机版本正完成 Apple Developer ID 公证配置；此前版本在 macOS 15 首次双击可能提示“来自身份不明的开发者”。</li>
+              <li>若被系统拦阻，请先在弹窗点击<strong>「好」</strong>，然后打开左上角苹果菜单 → <strong>「系统设置」→「隐私与安全性」</strong>。</li>
+              <li>向下滚动到「安全性」区块，点击“已阻止使用‘留声’”右侧的<strong>「仍要打开」</strong>并通过密码或指纹确认，仅首次打开需要操作一次。</li>
+              <li>完整图文与终端排查命令见 <a href="./legal.html#install">《安装、激活与排障指南》</a>。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="section-heading">买断、隐私与平台支持常见问题</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>为什么当前只有 Apple Silicon Mac 版？什么时候支持 Windows？</summary>
+            <p>
+              留声把离线语音识别（依赖 Apple Neural Engine 与统一内存）、矢量排版与本地视频硬编码打包成单包运行，先在 M 系列 Mac 上保证稳定与低风扇噪音。根据目前公开统计数据与研发投入规划，我们将先完成首批家庭与口述史工作室试点验证，再立项 Windows x64 构建。
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>体验版录了一位长辈后购买买断码，之前的数据会保留吗？</summary>
+            <p>
+              全部保留。激活仅在您的 Mac 本机离线解锁印厂级排版、无上限档案与无限导出权限，已录入的录音、老照片与精校故事不会丢失或重复导入。
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>工作室年卡到期不续费，客户做完的文件会被锁住吗？</summary>
+            <p>
+              不会。软件顶栏虽转为到期只读状态（限制新增商业客户库与商业导出），但您随时可以查看既有资料，并永久免费、原样导出原始照片、原声录音与完整 <code>.liusheng</code> 灾备包。
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>买断授权码可以在几台电脑使用？换了新 Mac 怎么迁移？</summary>
+            <p>
+              不强制绑定单台机器硬件码，家用买断版允许在您本人及直系亲属拥有的最多 <strong>3 台</strong> Mac 上离线激活使用；换机时只需在旧 Mac 「书房匣 → 备份中心」导出单一 <code>.liusheng</code> 文件，复制到新电脑一键还原即可。
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand-name">留声数字记忆工作室（Liusheng Studio）</div>
+        <div class="footer-note">
+          本站零第三方追踪脚本、零 Cookie。支持与反馈：<a href="mailto:support@liusheng.app">support@liusheng.app</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="./legal.html#eula">最终用户许可协议 (EULA)</a>
+        <a href="./legal.html#privacy">隐私政策</a>
+        <a href="./legal.html#install">安装与放行指南</a>
+        <a href="./legal.html#dpa">工作室 DPA 协议</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./config.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
