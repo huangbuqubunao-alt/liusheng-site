@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>留声 · 法律协议、隐私政策与 macOS 安装指南</title>
+  <meta
+    name="description"
+    content="留声桌面端《最终用户许可协议》《隐私政策》《macOS 3.0.0 安装与激活指南》及工作室个人信息委托处理协议说明。"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="./index.html" aria-label="返回留声首页">
+        <span class="seal-mark" aria-hidden="true">留</span>
+        <span class="brand-text-group">
+          <span class="brand-name">留声 · 合规与安装文档中心</span>
+          <span class="brand-sub">Liusheng Desktop v3.0.0</span>
+        </span>
+      </a>
+      <a class="btn btn-secondary btn-sm" href="./index.html">返回官网首页</a>
+    </div>
+  </header>
+
+  <main class="legal-main">
+    <div class="container legal-shell">
+      <aside class="legal-toc" aria-label="文档目录">
+        <h2>文件索引</h2>
+        <ul>
+          <li><a href="#eula">最终用户许可协议 (EULA)</a></li>
+          <li><a href="#privacy">本地优先隐私政策</a></li>
+          <li><a href="#install">macOS 3.0.0 安装与放行指南</a></li>
+          <li><a href="#dpa">工作室委托处理协议 (DPA)</a></li>
+        </ul>
+      </aside>
+
+      <article class="legal-article">
+        <section id="eula" class="legal-section">
+          <h2>留声桌面端最终用户许可协议（核心摘要）</h2>
+          <p>
+            <strong>生效日期：</strong>2026年11月12日 · <strong>运营主体：</strong>留声数字记忆工作室（Liusheng Studio） ·
+            <strong>客服邮箱：</strong><a href="mailto:support@liusheng.app">support@liusheng.app</a>
+          </p>
+          <h3>1. 授权档位与设备政策</h3>
+          <ul>
+            <li><strong>免费体验版（¥0）</strong>：内置《外婆/外公》双态样板书房，支持自建 1 位真实长辈档案、保存 3 篇真实故事与导出 1 支微信视频卡，仅供非商业评估试用。</li>
+            <li><strong>传家典藏买断版（早鸟价 ¥198 · <code>LS2-FAM</code>）</strong>：一次买断，主版本生命周期内持续有效，供购买者及其直系亲属非商业家用，支持不超过 <strong>3 台</strong>个人/家庭 Mac 设备。</li>
+            <li><strong>工作室尊享版（¥1,280/年 · <code>LS2-STU</code>）</strong>：按年商业授权，额外解锁物理隔离的多客户独立档案库（Multi-Vault）、定制出品署名与商用知情同意存证书。</li>
+          </ul>
+          <h3>2. 永不锁死家庭数据承诺</h3>
+          <p>
+            无论您处于免费体验版或工作室年度授权到期，留声绝不以商业原因为由锁定本机已录入的原始老照片、原声录音与 <code>.liusheng</code> 全量归档包——所有原始资产在任何状态下均支持免费、原样导出。
+          </p>
+          <h3>3. 退款与合规红线</h3>
+          <p>
+            离线激活码自购买之日起 <strong>14 天</strong>内，若在兼容 Apple Silicon Mac 上发生无法排除的技术崩溃且未滥用，可凭购买凭证申请全额退款（对应激活码将纳入后续版本作废黑名单）。严禁提取持久化声纹 ID、严禁在世长辈开启 AI 替身对话、严禁违反《民法典》第 994 条与 GB 45438-2025 规范。
+          </p>
+        </section>
+
+        <section id="privacy" class="legal-section">
+          <h2>留声桌面端隐私政策（Local-First 零上云架构）</h2>
+          <ul>
+            <li><strong>本地受控存储</strong>：全部档案、照片与音频默认仅存放于本机 <code>~/Library/Application Support/app.liusheng.desktop</code>；工作室独立档案库位于同目录下隔离子目录 <code>workspaces/</code>。</li>
+            <li><strong>无账号与无静默追踪</strong>：软件不设强制云端账号，未集成任何第三方广告或行为分析 SDK，不读取设备 MAC 地址或硬件序列号，激活验签由本机 Ed25519 公钥 0.1 秒离线完成。</li>
+            <li><strong>离线语音转写</strong>：内置 Sherpa-ONNX（FunAudioLLM SenseVoiceSmall int8 + Silero VAD）完全在您的 Mac 本地芯片推理，原始录音不经网络上传。</li>
+            <li><strong>可选补充通道严格限制</strong>：仅当用户另行主动签署《云端映坊补充协议》并完成近亲属存证后方按次开启临时零留存通道（&lt; 24h 即时销毁，不留存声纹 ID）。</li>
+            <li><strong>自主导出与彻底清除</strong>：支持应用内「书房匣」一键导出全量 <code>.liusheng</code> 灾备包，或随时彻底删除本机档案与数据目录。</li>
+          </ul>
+        </section>
+
+        <section id="install" class="legal-section">
+          <h2>macOS 3.0.0 安装、激活与 Gatekeeper 放行指引</h2>
+          <p>
+            <strong>硬件与系统要求：</strong>仅支持 <strong>Apple Silicon（M1 / M2 / M3 / M4）</strong> 芯片 Mac，<strong>macOS Monterey 12.0 及以上</strong>（不支持 Intel 芯片 Mac 或 Windows，Windows 版待首批试点验证后另行立项）。建议预留 2 GB 以上可用磁盘空间。
+          </p>
+          <h3>1. 安装与首次放行步骤（未完成 Apple 公证前）</h3>
+          <ol>
+            <li>下载 <code>Liusheng-3.0.0-macOS-arm64.dmg</code> 后建议核对首页发布的 SHA-256 指纹；</li>
+            <li>双击挂载镜像，将「留声.app」拖入「Applications（应用程序）」文件夹；</li>
+            <li>因 macOS 15 Sequoia 已取消按住 Control 点击直接放行，若双击出现“来自身份不明的开发者”提示，请先点击「好」，随后打开「系统设置 → 隐私与安全性」，滚至底部点击<strong>「仍要打开」</strong>，通过指纹或密码验证后即可永久正常打开；</li>
+            <li>若系统提示“已损坏”（隔离属性拦截），仅在确认安装包来自官网官方发布后，可在终端运行：<code>xattr -dr com.apple.quarantine /Applications/留声.app</code>。</li>
+          </ol>
+          <h3>2. 激活码兑付路径</h3>
+          <p>
+            进入软件后点击顶栏右侧<strong>「体验版 / 典藏版」</strong>印章，或点击<strong>「书房匣 → 版本权益与礼盒授权」</strong>，粘贴以 <code>LS2-FAM-</code> 或 <code>LS2-STU-</code> 开头的授权码点击「离线核验并激活」。
+          </p>
+        </section>
+
+        <section id="dpa" class="legal-section">
+          <h2>工作室客户个人信息委托处理协议（DPA 核心要点）</h2>
+          <p>
+            依据《中华人民共和国个人信息保护法》第二十一条，留声工作室尊享版内置标准化《客户个人信息委托处理协议》范本（完整模板位于软件包及仓库 <code>docs/legal/STUDIO_DPA_TEMPLATE.md</code>）：
+          </p>
+          <ul>
+            <li><strong>物理隔离作业</strong>：代写工作室必须为每位委托家庭单独新建 Multi-Vault 隔离档案库，并在启用全盘加密（FileVault）的本地 Mac 离线完成转写与排版，严禁擅自把客户原声上传第三方网盘或公网大模型。</li>
+            <li><strong>知情同意与边界留痕</strong>：采访前取得受访长辈或法定监护人同意，并在软件内置合规中心锁定录音哈希与传播边界。</li>
+            <li><strong>限期彻底删除条款</strong>：向委托家庭完整交付 B5 PDF、有声 `.html`、视频卡与 <code>.liusheng</code> 灾备包并结款验收后（默认 30 个自然日缓冲期满），工作室须彻底销毁本地工作备份并出具删除确认函。</li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>留声数字记忆工作室（Liusheng Studio）</strong> · 文档内容与桌面端 <code>docs/legal/</code> 同步生效
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">返回首页</a>
+        <a href="./index.html#download">下载安装</a>
+        <a href="mailto:support@liusheng.app">联系支持</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
